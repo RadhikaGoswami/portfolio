@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>mock up website</title>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+             <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+              <link rel="stylesheet"     href="https://fonts.googleapis.com/css?family=Courgette" >
+        
+        <style>
+    
+            body{
+                max-width: 1200px;
+                margin:0auto;
+                padding:1rem 4.5rem 0rem;
+                font-family:"Courgette";
+                color:#2d3c49;
+               
+            }
+            
+            h2{
+                color:'#7d97ad';
+            }
+            
+            .wrapper{
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: "header"
+                    "hero"
+                    "featured-work";
+                   grid-row-gap: 1.3rem;
+            }
+            
+            .header{
+                grid-area:header;
+                display:grid;
+                grid-template-columns: 1fr 5fr;
+                border-bottom:2px solid #7d97ad;
+            }
+            .header-text{ 
+                margin: 0;
+                padding: 1rem 0rem;
+                text-align: right;
+                
+            }
+            
+            .logo{
+                padding:1rem 0rem;
+            }
+            .logo-img{
+                max-height: 100%;
+            }
+            .header-main{
+                font-size:4rem;
+                display: block;
+                margin-bottom: 2rem;
+               text-align: right;
+                text-transform: uppercase;
+            }
+                .header-sub{
+                font-size:2rem;
+                display: block;
+                margin-bottom: 2rem;
+               text-align: right;
+                
+            }
+            .hero{
+                grid-area: hero;
+                min-height:30rem;
+                background-image: url("hand-1076597_1920.jpg");
+                width: auto;
+                height: auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position:relative;
+            }
+            
+            .featured-work{
+                font-size: 2rem;
+                grid-area:featured-work ;
+                
+            }
+            
+            .featurette{
+                display: -webkit-flex;
+                -webkit-flex-direction:row;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .featurette-box {
+                width: 30%;
+                text-align:center;
+            }
+            .featurette-box img{
+                max-width: 100%;
+                padding: 1px;
+                border: 1px solid #ccc;
+            }
+            .featurette-box h3{
+                margin-bottom: 0px;
+                font-size: 1.5rem;
+              
+                color:#2d3c49;
+            }
+             .featurette-box botton{
+                 padding: 10px 10px;
+                   margin-bottom: 0px;
+                font-size: 1rem;
+                text-transform: none;
+               background-color: #2d3c49;
+                 color:white;
+            }
+            
+              
+            @media screen  and (max-width: 490px) {
+   .logo-image {
+    max-height:1rem;
+  }
+
+  .header-main {
+    font-size: 2.0rem;
+    display: block;
+  }
+
+  .header-sub {
+    font-size: 1rem;
+    display: block;
+    color: #888;
+  }
+
+  .featured-work {
+     text-align: center;
+  }
+
+  .featurette {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+  .featurette-box {
+    width: 60vw;
+    text-align: center;
+    margin: auto auto 5rem;
+  }
+}
+            
+            @media screen and (min-width: 491px) and (max-width: 900px) {
+   .logo-image {
+    max-height:1rem;
+  }
+
+  .header-main {
+    font-size: 2.0rem;
+    display: block;
+  }
+
+  .header-sub {
+    font-size: 1rem;
+    display: block;
+    color: #888;
+  }
+
+  .featured-work {
+     text-align: center;
+  }
+
+  .featurette {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+  .featurette-box {
+    width: 60vw;
+    text-align: center;
+    margin: auto auto 5rem;
+  }
+}
+                  </style>
+    
+    </head>
+    <body>
+        <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <img src="bAasta.jpg" class="logo-img"></div>
+            <div class="head-text">
+            <h1 class="header-main">RADHIKA GOSWAMI</h1>
+                   <h3 class="header-sub">FRONT-END NINJA</h1>
+            </div>
+        
+        </header>
+            <div class=hero></div>
+        
+            <section class="featured-work">
+                <h2>Featured Work</h2>
+                <div class="featurette">
+            <div class="featurette-box">
+  <img src="guosh.jpg"
+       size="(min-width:901px) 32vw,
+             (min-width:491px) and (max-width:900px)60vw,
+             (max-width:490px)100vw"
+       alt="asta"
+       /><h3>CS Maestro</h3>
+                <botton>Check out</botton>
+                      
+          
+             </div>
+                    
+                               <div class="featurette-box">
+                 <img  src="finro.jpg"  size="(min-width:901px) 32vw,
+             (min-width:491px) and (max-width:900px)60vw,
+             (max-width:490px)100vw"/>
+                <h3>CS Maestro</h3>
+                                      <botton>Check out</botton>
+                </div>
+                    
+                    
+            <div class="featurette-box">
+                 <img  src="look.jpg"  size="(min-width:901px) 32vw,
+             (min-width:491px) and (max-width:900px)60vw,
+             (max-width:490px)100vw"/>
+                <h3>CS Maestro</h3>   <botton>Check out</botton>
+                </div>
+                    </div>
+            </section>
+        </div>
+    </body>
+</html>
